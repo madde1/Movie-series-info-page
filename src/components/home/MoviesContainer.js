@@ -6,8 +6,8 @@ export class MoviesContainer extends Component {
     render(){
         const {movies} = this.props
         let content = ''
-        let errorMessage  = 'Could not find any movies'
-        content = movies.Response === "True" ? movies.Search.map((movie,index) => <MovieCard key= { index } movie = { movie }/>) : <h3 className="ml-4 text-center">{errorMessage}</h3>
+       
+        content = movies.Response === "True" ? movies.Search.map((movie,index) => <MovieCard key= { index } movie = { movie }/>) : null
         return(
             <div className="row">
                 {content}
