@@ -1,21 +1,43 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+
 function Navbar(){
     return(
-        <div>
-            <nav className="navbar navbar-light bg-dark mb-5">
-                <div className="container">
-                    <Link className="navbar-brand text-white text-lg brand-text" to="/">MovieSeriesInfo</Link>
-                </div>
-                <ul className="navbar-nav ml-auto text-light d-inline-block">
-                    <li className="nav-item d-inline-block mr-4">
-                        <i className="fab fa-imdb fa-5x" id="imdb-logo"/>
-                    </li>
-                    <li className="nav-item d-inline-block mr-4">
-                        <i className="fab fa-react fa-5x" id="react-logo"/>
-                    </li>
-                </ul>
-            </nav>
+        <div>      
+            <nav id="nav" className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+                
+                    <ul className="nav navbar-nav mr-auto">
+                        <li className="ml-5 nav-item active">
+                            <Link className="nav-link" to="/"><i id="home-logo" class="fas fa-home "></i><span className="sr-only">(current)</span></Link>
+                        </li>   
+                                        
+                        <li className="nav-item dropdown">
+                            <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Projekt
+                            </a>
+                        <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <Link className="dropdown-item" to="/movie-tvseries-search/">Movie Tv Series Search</Link>
+                            <a className="dropdown-item" href="#">Another action</a>
+                            <div className="dropdown-divider"></div>
+                            <a className="dropdown-item" href="#">Something else here</a>
+                        </div>
+                        </li>
+                    </ul>
+                  
+                    <ul className="navbar-nav ml-auto text-light d-inline-block">
+                                <li className="nav-item d-inline-block mr-2">
+                                <i className="fab fa-github-square fa-2x" id="github-logo"></i>
+                                </li>
+                                <li className="nav-item d-inline-block mr-2">
+                                <i class="fab fa-linkedin fa-2x" id="github-logo"></i>
+                                </li>
+                                <li className="nav-item d-inline-block mr-2">
+                                    <i className="fab fa-react fa-2x" id="react-logo"/>
+                                </li>
+
+                                
+                    </ul>
+             </nav>
         </div>
     )
 }

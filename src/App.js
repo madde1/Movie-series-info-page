@@ -3,8 +3,10 @@ import { Provider } from 'react-redux'
 import { HashRouter as Router, Route } from 'react-router-dom' 
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
-import Landing from './components/home/Landing'
-import Movie from './components/home/Movie'
+import LandingHome from './components/home-page/LandingHome'
+
+import Landing from './components/home-movie/Landing'
+import Movie from './components/home-movie/Movie'
 import store from './store'
 
 
@@ -15,7 +17,9 @@ class App extends Component{
             <Router> 
                 <div>
                     <Navbar />
-                    <Route exact path="/" component={Landing} />
+                    <Route exact path="/" component={LandingHome}/>
+                 
+                    <Route exact path="/movie-tvseries-search/" component={Landing} />
                     <Route exact path="/movie/:id" component={Movie} />
                     <Footer />
                 </div>

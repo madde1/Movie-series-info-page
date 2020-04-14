@@ -1,3 +1,28 @@
+body{
+  font-family: 'Poppins' !important;
+}
+p{
+  font-weight: 300;
+}
+#nav{
+  max-width: 100%;
+  
+}
+.heading{
+  font-family: 'Poppins';
+  font-weight: 300 !important;
+  text-shadow: color1 x1 y1 blur1, color2 x2 y2 blur2, …;
+}
+#puff1{
+  margin-top: -100px;
+}
+#card{
+  width: 18rem;
+}
+#footer{
+  max-width: 100%;
+  background-color: black;
+}
 #movies img,
 #movie img {
   width: 100%;
@@ -11,6 +36,120 @@
 #imdb-logo {
   color: #f5de50;
 }
+#github-logo{
+  color: #555555;
+}
+#hero-Img{
+  max-height: 900px;
+  width: 100%;
+}
+#bg-black{
+  background-color: black;
+}
+.bg-black{
+  background-color: black;
+}
+a{
+  color:black !important;
+}
+
+#background{
+  max-height: auto;
+}
+#home-logo{
+  font-size: 20px;
+}
+#home-logo:hover{
+  color:#59A0F1;
+}
+#h1-puff{
+  font-family: 'Calligraffitti', cursive;
+  
+}
+.nav-pills{
+  font-size:20px;
+  text-align: center;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+  background-color: #343a40!important;
+  text-align: center;
+  border-radius: none;
+  color:white !important;
+  font-size:20px;
+}
+#icon-size-20{
+  font-size: 20px;
+}
+#icon-size-50{
+  font-size: 50px;
+}
+#contact-puff{
+  width: 47%;
+    padding: 1em 2em;
+    margin: 2em auto 3em;
+    margin-top: -50px;
+    z-index: -1;
+}
+.contact-link{
+ 
+  cursor: pointer;
+}
+.contact-link:hover{
+  font-weight: 500;
+  color:#3E444B!important;
+  cursor: pointer;
+}
+.marg-pad{
+  margin: 0;
+  padding: 2%;
+}
+.ribbon {
+  font-size: 16px !important;
+  /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+  font-family: 'Poppins';
+  width: 50%;
+  font-weight: 300;   
+  position: relative;
+  background: #3E444B;
+  color: #fff;
+  text-align: center;
+  padding: 1em 2em; /* Adjust to suit */
+  margin: 2em auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+ }
+ .ribbon:before, .ribbon:after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -1em;
+  border: 1.5em solid #343a40;
+  z-index: -1;
+ }
+ .ribbon:before {
+  left: -2em;
+  border-right-width: 1.5em;
+  border-left-color: transparent;
+ }
+ .ribbon:after {
+  right: -2em;
+  border-left-width: 1.5em;
+  border-right-color: transparent;
+ }
+ .ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+  bottom: -1em;
+ }
+ .ribbon .ribbon-content:before {
+  left: 0;
+  border-width: 1em 0 0 1em;
+ }
+ .ribbon .ribbon-content:after {
+  right: 0;
+  border-width: 1em 1em 0 0;
+ }
 @media (min-width: 960px) {
   #movies .col-md-3 .well {
     height: 390px;
@@ -19,4 +158,5 @@
   #movies .col-md-3 img {
     height: 240px;
   }
+ 
 }
