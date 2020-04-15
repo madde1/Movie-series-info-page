@@ -55,7 +55,7 @@ export class Movie extends Component{
                             rel="noopener noreferrer"
                             className="btn btn-primary"
                             >View on IMDB</a>
-                        <Link to="/" className="btn btn-default text-light">
+                        <Link to="/movie-tvseries-search/" className="btn btn-default text-light">
                             Go back to search
                         </Link>
                     </div>
