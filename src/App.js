@@ -18,7 +18,6 @@ class App extends Component{
                 <div>
                     <Navbar />
                     <Route exact path="/" component={LandingHome}/>
-                 
                     <Route exact path="/movie-tvseries-search/" component={Landing} />
                     <Route exact path="/movie/:id" component={Movie} />
                     <Footer />
