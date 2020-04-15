@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "493310eef0a57e9cf69c936fff94f68a",
+    "revision": "feefa0481a17b9acb81f9817d97079f9",
     "url": "/madde/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/madde/static/css/2.2990c7a7.chunk.css"
   },
   {
-    "revision": "9cb267959133e0d1963c",
-    "url": "/madde/static/css/main.a30e929a.chunk.css"
+    "revision": "e91cb98c08b323f66e2f",
+    "url": "/madde/static/css/main.2aae277d.chunk.css"
   },
   {
     "revision": "93b5e30485e1e8a29189",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/madde/static/js/2.35270b2e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9cb267959133e0d1963c",
-    "url": "/madde/static/js/main.62fc10db.chunk.js"
+    "revision": "e91cb98c08b323f66e2f",
+    "url": "/madde/static/js/main.2e9c04c2.chunk.js"
   },
   {
     "revision": "366a3859a53387f50f23",
