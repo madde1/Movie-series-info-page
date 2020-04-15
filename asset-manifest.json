@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/madde/static/css/main.3b4a6cd0.chunk.css",
+    "main.css": "/madde/static/css/main.1d6f9090.chunk.css",
     "main.js": "/madde/static/js/main.2e9c04c2.chunk.js",
     "main.js.map": "/madde/static/js/main.2e9c04c2.chunk.js.map",
     "runtime-main.js": "/madde/static/js/runtime-main.6cd26e85.js",
@@ -9,10 +9,10 @@
     "static/js/2.35270b2e.chunk.js": "/madde/static/js/2.35270b2e.chunk.js",
     "static/js/2.35270b2e.chunk.js.map": "/madde/static/js/2.35270b2e.chunk.js.map",
     "index.html": "/madde/index.html",
-    "precache-manifest.c3816203ec62761ffc232e793c5b22b1.js": "/madde/precache-manifest.c3816203ec62761ffc232e793c5b22b1.js",
+    "precache-manifest.210865b0c8feb818e8ec7d8f0df7e1ce.js": "/madde/precache-manifest.210865b0c8feb818e8ec7d8f0df7e1ce.js",
     "service-worker.js": "/madde/service-worker.js",
     "static/css/2.2990c7a7.chunk.css.map": "/madde/static/css/2.2990c7a7.chunk.css.map",
-    "static/css/main.3b4a6cd0.chunk.css.map": "/madde/static/css/main.3b4a6cd0.chunk.css.map",
+    "static/css/main.1d6f9090.chunk.css.map": "/madde/static/css/main.1d6f9090.chunk.css.map",
     "static/js/2.35270b2e.chunk.js.LICENSE.txt": "/madde/static/js/2.35270b2e.chunk.js.LICENSE.txt",
     "static/media/heroimg5.png": "/madde/static/media/heroimg5.dea20659.png",
     "static/media/jag3.png": "/madde/static/media/jag3.d161fac3.png",
@@ -22,7 +22,7 @@
     "static/js/runtime-main.6cd26e85.js",
     "static/css/2.2990c7a7.chunk.css",
     "static/js/2.35270b2e.chunk.js",
-    "static/css/main.3b4a6cd0.chunk.css",
+    "static/css/main.1d6f9090.chunk.css",
     "static/js/main.2e9c04c2.chunk.js"
   ]
 }
