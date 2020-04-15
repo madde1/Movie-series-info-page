@@ -52,6 +52,9 @@ p{
 a{
   color:black !important;
 }
+a:visited{
+  color:black !important;
+}
 
 #background{
   max-height: auto;
