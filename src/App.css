@@ -103,6 +103,9 @@ a{
   margin: 0;
   padding: 2%;
 }
+.margin-l{
+  margin-top: 100px !important;
+}
 .ribbon {
   font-size: 16px !important;
   /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
@@ -150,6 +153,36 @@ a{
   right: 0;
   border-width: 1em 1em 0 0;
  }
+
+ #profile-col1{
+   height: 200px;
+ }
+.neon-text {
+  font-size: 8em;
+  color: #FFDD1B!important;
+  font-family: 'Pacifico', cursive;
+  -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon2 1.5s ease-in-out infinite alternate;
+  animation: neon2 1.5s ease-in-out infinite alternate;
+  text-align: center;
+}
+.neon-text:hover{
+  -webkit-animation: none;
+  -moz-animation: none;
+  animation: none;
+}
+.img-w{
+  width: 300px;
+}
+@keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FFDD1B, 0 0 70px #FFDD1B, 0 0 80px #FFDD1B, 0 0 100px #FFDD1B, 0 0 150px #FFDD1B;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FFDD1B, 0 0 35px #FFDD1B, 0 0 40px #FFDD1B, 0 0 50px #FFDD1B, 0 0 75px #FFDD1B;
+  }
+}
+
 @media (min-width: 960px) {
   #movies .col-md-3 .well {
     height: 390px;
@@ -158,5 +191,15 @@ a{
   #movies .col-md-3 img {
     height: 240px;
   }
+
  
+}
+@media (max-width:500px){
+  .neon-text {
+    margin-top: 50px;
+    font-size: 3em;
+  }
+  .display-4{
+    font-size: 2em !important;
+  }
 }

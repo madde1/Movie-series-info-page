@@ -20,7 +20,7 @@ import { searchMovie, fetchMovies, setLoading } from '../../actions/searchAction
             <div className="jumbotron jumbotron-fluid mt-5 text-center">
                 <div className="container">
                     <h1 className="display-4 mb-3">
-                        <i className="fa fa-search" /> Search for a movie, Tv series ..
+                        <i className="fa fa-search" /> Sök efter en film eller serie..
                     </h1>
                     <form id="searchForm" onSubmit={this.onSubmit}>
                         <input
@@ -30,7 +30,7 @@ import { searchMovie, fetchMovies, setLoading } from '../../actions/searchAction
                         placeholder="Search Movies, TV Series" 
                         onChange={this.onChange}
                         />
-                        <button type ="submit" className="btn btn-primary btn-bg mt-3">Search</button>
+                        <button type ="submit" className="btn btn-warning btn-bg mt-3">Search</button>
                     </form>
                 </div>
             </div>

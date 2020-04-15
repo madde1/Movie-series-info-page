@@ -8,10 +8,16 @@ class Landing extends Component {
     render(){
         const { loading } = this.props
         return(
-            <div className="container">
-                <SearchForm />
-              {  loading ? <Spinner /> : <MoviesContainer />}
+            <div>
+                <div className="mt-5 bg-black  p-3">
+                    <p class="neon-text">Filmer och Serier</p>
+                </div>
+                <div className="container margin-l">
+                    <SearchForm />
+                    {  loading ? <Spinner /> : <MoviesContainer />}
+                </div>
             </div>
+           
         )
     }
 }
