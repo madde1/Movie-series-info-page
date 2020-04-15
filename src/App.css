@@ -202,4 +202,30 @@ a{
   .display-4{
     font-size: 2em !important;
   }
+
+  .nav li{
+    margin-left: 0px !important;
+    margin-right: 10px;
+  }
+  #background{
+    margin-top: 50px;
+  }
+  .heading{
+    font-size: 25px !important;
+  }
+  #puff1{
+    margin-top: -50px;
+  }
+  .ribbon{
+    width: 100%;
+  }
+  #contact-puff{
+    width:90%;
+  }
+  #profile-col1{
+    height: 100%;
+  }
+  .navbar-nav .dropdown-menu{
+    position: absolute !important;
+  }
 }

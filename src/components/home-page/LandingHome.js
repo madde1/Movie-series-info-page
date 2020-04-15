@@ -121,7 +121,7 @@ class LandingHome extends Component{
                                             <p>Hemsidan är gjord i React JS. Här finns lite olika projekt jag arbetar med på min fritid. Länkar till min LinkedIn, Github bland annat. </p>
                                         </div>
                                         <div className="col-sm">
-                                            <img src={image2} className="" alt="Person"/>
+                                            <img src={image2} className="img-fluid" alt="Person"/>
                                         </div>
                                     </div>
                                 </div>

@@ -6,12 +6,12 @@ function Navbar(){
         <div>      
             <nav id="nav" className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
                 
-                    <ul className="nav navbar-nav mr-auto">
-                        <li className="ml-5 nav-item active">
+                    <ul className="nav navbar-nav d-inline-block mr-auto">
+                        <li className="ml-5 nav-item d-inline-block active">
                             <Link className="nav-link" to="/"><i id="home-logo" class="fas fa-home "></i><span className="sr-only">(current)</span></Link>
                         </li>   
                                         
-                        <li className="nav-item dropdown">
+                        <li className="nav-item d-inline-block dropdown">
                             <p className="nav-link dropdown-toggle font-weight-normal text-dark"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Projekt
                             </p>
