@@ -11,7 +11,6 @@ p{
 .heading{
   font-family: 'Poppins';
   font-weight: 300 !important;
-  text-shadow: color1 x1 y1 blur1, color2 x2 y2 blur2, …;
 }
 #puff1{
   margin-top: -100px;
