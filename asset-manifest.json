@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/madde/static/css/main.a30e929a.chunk.css",
-    "main.js": "/madde/static/js/main.e3887a6e.chunk.js",
-    "main.js.map": "/madde/static/js/main.e3887a6e.chunk.js.map",
+    "main.js": "/madde/static/js/main.62fc10db.chunk.js",
+    "main.js.map": "/madde/static/js/main.62fc10db.chunk.js.map",
     "runtime-main.js": "/madde/static/js/runtime-main.6cd26e85.js",
     "runtime-main.js.map": "/madde/static/js/runtime-main.6cd26e85.js.map",
     "static/css/2.2990c7a7.chunk.css": "/madde/static/css/2.2990c7a7.chunk.css",
     "static/js/2.35270b2e.chunk.js": "/madde/static/js/2.35270b2e.chunk.js",
     "static/js/2.35270b2e.chunk.js.map": "/madde/static/js/2.35270b2e.chunk.js.map",
     "index.html": "/madde/index.html",
-    "precache-manifest.08df190477117e8c50bc4fce7d823744.js": "/madde/precache-manifest.08df190477117e8c50bc4fce7d823744.js",
+    "precache-manifest.495a0cb7b0456cbcfb672097cd2d5808.js": "/madde/precache-manifest.495a0cb7b0456cbcfb672097cd2d5808.js",
     "service-worker.js": "/madde/service-worker.js",
     "static/css/2.2990c7a7.chunk.css.map": "/madde/static/css/2.2990c7a7.chunk.css.map",
     "static/css/main.a30e929a.chunk.css.map": "/madde/static/css/main.a30e929a.chunk.css.map",
@@ -23,6 +23,6 @@
     "static/css/2.2990c7a7.chunk.css",
     "static/js/2.35270b2e.chunk.js",
     "static/css/main.a30e929a.chunk.css",
-    "static/js/main.e3887a6e.chunk.js"
+    "static/js/main.62fc10db.chunk.js"
   ]
 }
