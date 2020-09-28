@@ -57,9 +57,9 @@ class LandingHome extends Component{
                                 </div>
                                 <div id="profile-col1" className="col-s shadow p-5 m-2">
                                     <h5>Nuvarande Anställning:</h5>
-                                    <h6 className="mb-0">Fullstack utvecklare - Praktikant, DevPort</h6>
-                                    <p className="font-weight-light mb-0">02/2020 - nu</p>
-                                    <p>Arbete med utveckling av DevPorts interna, externa <br></br> och e-learning hemsida.</p>
+                                    <h6 className="mb-0">Arbetslös</h6>
+                                    <p className="font-weight-light mb-0">07/2020 - nu</p>
+                                    <p>Letar arbete som fullstack<br></br> utvecklare/Java utvecklare  </p>
                                 </div>
                                 <div className="col-s shadow p-5 m-2 ">
                                     <h5>Färdigheter</h5>
@@ -94,8 +94,11 @@ class LandingHome extends Component{
                                        <Link to="/movie-tvseries-search"><img className="img-fluid" src={image3} alt="Movie and tv series page"/></Link>
                                         <p className="m-0">En hemsida för att söka ut filmer och tv serier som hämtas från API:et OMDB</p>
                                     </div>
-                                    <div className="col-sm">
-                                            </div>
+                                    <div className="col-sm shadow p-4">
+                                        <img className="img-fluid" src={image4} alt="Pong"/>
+                                        <p className="mt-3">Ett ping pong spel gjort i Java och Java Swing för layout.</p>
+                                        <a className="btn btn-outline-secondary" href="https://github.com/madde1/PongGame" target="_blank">Github repo</a>
+                                    </div>
                                     </div>    
                                     </div>               
                             </section>
