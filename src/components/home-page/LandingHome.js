@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom'
 import image from '../../images/heroimg5.png'
 import image2 from '../../images/jag3.png'
 import image3 from '../../images/movieTv.PNG'
+import image4 from '../../images/pong.PNG'
 class LandingHome extends Component{
     render(){
         return(
@@ -92,7 +93,8 @@ class LandingHome extends Component{
                                     <div class="row">
                                     <div className="col-sm shadow p-4">
                                        <Link to="/movie-tvseries-search"><img className="img-fluid" src={image3} alt="Movie and tv series page"/></Link>
-                                        <p className="m-0">En hemsida för att söka ut filmer och tv serier som hämtas från API:et OMDB</p>
+                                        <p className="mt-3">En hemsida för att söka ut filmer och tv serier som hämtas från API:et OMDB</p>
+                                        <a className="btn btn-outline-secondary" href="https://github.com/madde1/madde/tree/master/src/components/home-movie" target="_blank">Github repo</a>
                                     </div>
                                     <div className="col-sm shadow p-4">
                                         <img className="img-fluid" src={image4} alt="Pong"/>
