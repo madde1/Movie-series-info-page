@@ -340,6 +340,30 @@ a:visited{
 .cartEcommerceTotalBtn:hover{
   background-color: #555555;
 }
+.carFormEcommerce{
+  width: 100%;
+}
+.cartFormContainerEcommerce{
+  margin-top: 5%;
+  padding:0;
+  list-style-type:none ;
+  width: 100%;
+}
+.cartFormContainerEcommerce li{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.cartFormContainerEcommerce li input{
+  border: .1rem #c0c0c0 solid;
+}
+.carFormEcommerceBtn{
+  background-color: black;
+  color:white;
+  border:none;
+  padding: 2%;
+}
+
 .right{
   text-align: right;
 }

@@ -1,6 +1,31 @@
 import React, {Component} from 'react'
 import formatCurrency from '../../utils/utils'
 export default class CartEcommerce extends Component{
+    constructor(props){
+        super(props);
+        this.state={
+            name:"",
+            email:"",
+            address: "",
+            city: "",
+            showCheckout: false
+        }
+    }
+
+    handelInput= (e) => {
+        this.setState({ [e.target.name]: e.target.value })
+    }
+    createOrder = (e) =>{
+        e.preventDefault()
+        const order ={
+            name: this.state.name,
+            email: this.state.email,
+            address: this.state.address,
+            city:this.state.city,
+            cartItems: this.props.cartItems
+        }
+        this.props.createOrder(order)
+    }
     render(){
        
         return(
@@ -10,7 +35,7 @@ export default class CartEcommerce extends Component{
                 <div class="cartEcommerce cartEcommerceHeader">You have {this.props.cartItems.length} in the cart {" "}</div>    
             }
             <div>
-            <div class="cartEcommerce">
+            <div >
                 <div class="cartEcommerceItems">
                     {this.props.cartItems.map((items) =>(
                         <li key={items.id}>
@@ -29,16 +54,46 @@ export default class CartEcommerce extends Component{
                     ))}
                 </div>
                 {this.props.cartItems.length !== 0 && ( //hide if no item added to cart
-                    <div class="cartEcommerce">
+                <div>
+                    <div>
                         <div class="cartEcommerceTotal">
                             <div>
                                 Total: {" "}
                                 {formatCurrency(this.props.cartItems.reduce((a,c) =>  a + c.price * c.count, 0))}
                             </div>
-                            <button class="cartEcommerceTotalBtn">Procced</button>
+                            <button onClick={() => {this.setState({showCheckout: true})}} class="cartEcommerceTotalBtn">Procced</button>
                         </div>
                 </div>
+                {this.state.showCheckout &&(
+                    <div > 
+                    <form class="carFormEcommerce" onSubmit={this.createOrder}>
+                        <ul class="cartFormContainerEcommerce">
+                            <li>
+                                <label>Name</label>
+                                <input type="text" name="name" required onChange={this.handelInput}></input>
+                            </li>
+                            <li>
+                                <label>Email</label>
+                                <input type="email" name="email" required onChange={this.handelInput}></input>
+                            </li>
+                            <li>
+                                <label>Address</label>
+                                <input type="text" name="address" required onChange={this.handelInput}></input>
+                            </li>
+                            <li>
+                                <label>City</label>
+                                <input type="text" name="city" required onChange={this.handelInput}></input>
+                            </li>
+                            <li>
+                                <button class="carFormEcommerceBtn" type="submit">Checkout</button>
+                            </li>
+                        </ul>
+                    </form>
+                    </div>
                 )}
+                </div>
+                )}
+
             </div>
             </div>
             </div>

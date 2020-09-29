@@ -3,6 +3,7 @@ import Products from '../home-ecommerce/Products';
 import FilterEcommerce from './FilterEcommerce';
 import {products} from '../../data/dataecommerce'
 import CartEcommerce from './CartEcommerce';
+
 class Landingecommerce extends Component {
     constructor(){
         super();
@@ -10,14 +11,18 @@ class Landingecommerce extends Component {
             products: products,
             size:"",
             sort:"",
-            cartItems: [],
+            cartItems: localStorage.getItem("cartItems")? JSON.parse(localStorage.getItem("cartItems")):[],
         };
+    }
+
+    createOrder = (order) =>{
+        alert("Need to save order for" + order.name )
     }
 
     removeFromCart = (products) =>{
         const cartItems = this.state.cartItems.slice()
-        this.setState({cartItems:cartItems.filter(x=>x.id !== products.id)})
-        
+        this.setState({cartItems:cartItems.filter((x) => x.id !== products.id)})
+        localStorage.setItem("cartItems", JSON.stringify(cartItems.filter((x) => x.id !== products.id)))
     }
 
     addToCart = (products)=>{
@@ -35,6 +40,7 @@ class Landingecommerce extends Component {
 
         }
         this.setState({cartItems})
+        localStorage.setItem("cartItems", JSON.stringify(cartItems))
     }
 
     sortProducts = (event) =>{
@@ -86,7 +92,8 @@ class Landingecommerce extends Component {
                         <div class="sidebarEcommerce">
                             <CartEcommerce
                              cartItems ={this.state.cartItems}
-                             removeFromCart={this.removeFromCart}/>
+                             removeFromCart={this.removeFromCart}
+                             createOrder={this.createOrder}/>
                         </div>
                     </div>
                 </main>
