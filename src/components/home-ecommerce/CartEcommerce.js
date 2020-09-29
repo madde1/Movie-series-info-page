@@ -1,5 +1,7 @@
 import React, {Component} from 'react'
 import formatCurrency from '../../utils/utils'
+import Fade from 'react-reveal/Fade'
+
 export default class CartEcommerce extends Component{
     constructor(props){
         super(props);
@@ -15,6 +17,7 @@ export default class CartEcommerce extends Component{
     handelInput= (e) => {
         this.setState({ [e.target.name]: e.target.value })
     }
+
     createOrder = (e) =>{
         e.preventDefault()
         const order ={
@@ -29,30 +32,35 @@ export default class CartEcommerce extends Component{
     render(){
        
         return(
-            <div>
+        <section>
                 {this.props.cartItems.length === 0? <div class="cartEcommerce cartEcommerceHeader"> Cart is empty</div>
                 :
                 <div class="cartEcommerce cartEcommerceHeader">You have {this.props.cartItems.length} in the cart {" "}</div>    
             }
-            <div>
-            <div >
-                <div class="cartEcommerceItems">
+         <section>       
+            <div class="cartEcommerce" >
+            <Fade left cascade>
+                <ul class="cartEcommerceItems">
+                   
                     {this.props.cartItems.map((items) =>(
-                        <li key={items.id}>
-                            <div>
-                                <img src={items.image} alt={items.title}></img>
+                        <li class="cartLiEcommerce" key={items.id}>
+                            <div class="cartLiContainerEcommerce">
+                                <img class="cartEcommerceImg" src={items.image} alt={items.title}></img>
                             </div>
                             <div>
                                 <div>{items.title}</div>
                                 <div class="right">
                                 {formatCurrency(items.price)} x {items.count} 
-                                <button onClick={()=>this.props.removeFromCart(items)}>Remove</button>
+                                <button class="cartBtnRemoveEcommerce" onClick={()=>this.props.removeFromCart(items)}>Remove</button>
                                 </div>
                                
                             </div>
                         </li>
                     ))}
-                </div>
+                </ul>
+                </Fade>
+            </div>
+             
                 {this.props.cartItems.length !== 0 && ( //hide if no item added to cart
                 <div>
                     <div>
@@ -65,6 +73,7 @@ export default class CartEcommerce extends Component{
                         </div>
                 </div>
                 {this.state.showCheckout &&(
+                    <Fade right cascade>
                     <div > 
                     <form class="carFormEcommerce" onSubmit={this.createOrder}>
                         <ul class="cartFormContainerEcommerce">
@@ -90,13 +99,15 @@ export default class CartEcommerce extends Component{
                         </ul>
                     </form>
                     </div>
+                    </Fade>
                 )}
                 </div>
                 )}
 
-            </div>
-            </div>
-            </div>
+          
+           
+            </section>
+            </section>
             
         )
     }
