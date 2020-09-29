@@ -105,8 +105,20 @@ a:visited{
   margin: 0;
   padding: 2%;
 }
+.margin-s{
+  margin-top: 3%;
+}
+.margin-m{
+  margin-top:5% ;
+}
 .margin-l{
   margin-top: 100px !important;
+}
+.pad-s{
+  padding: 2%;
+}
+.pad-top{
+  padding-top:2%;
 }
 .ribbon {
   font-size: 16px !important;
@@ -185,6 +197,76 @@ a:visited{
   }
 }
 
+
+/**Ecommrece*/
+.ecommerceHome{
+  width: 100%;
+  display: grid;
+}
+
+.header-ecommerce{
+  color:white !important;
+  background-color: black;
+  width: 100%;
+  padding: 2%;
+}
+
+.head-ecommerce{
+  color:white !important;
+}
+.head-ecommerce:hover{
+  color:#ffc107!important;
+}
+.contentEcommerce{
+  display:flex;
+  flex-wrap: wrap;
+}
+.mainEcommerce{
+  flex:3 60rem;
+}
+.sidebarEcommerce{
+  flex:1 0rem;
+}
+
+.productsEcommerce{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.productsEcommerce div{
+  height: 40rem;
+  max-width: 35rem;
+  padding: 1rem;
+
+}
+
+.productEcommerce{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.productEcommerce img{
+  max-width:25rem;
+  max-height: 37rem;
+}
+.product-price{
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size:20px;
+}
+.btn-product{
+  background-color: black;
+  color:white;
+  border:none;
+  padding: 1%;
+  width: 150px;
+  margin-left:5% !important;
+  font-size: 15px;
+
+}
 @media (min-width: 960px) {
   #movies .col-md-3 .well {
     height: 390px;

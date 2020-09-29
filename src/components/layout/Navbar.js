@@ -17,6 +17,7 @@ function Navbar(){
                             </p>
                         <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                             <Link className="dropdown-item" to="/movie-tvseries-search/">Movie Tv Series Search</Link>
+                            <Link className="dropdown-item" to="/ecommerce/">Ecommerce page</Link>
                             {/* <a className="dropdown-item" href="#">Another action</a>
                             <div className="dropdown-divider"></div>
                             <a className="dropdown-item" href="#">Something else here</a> */}
