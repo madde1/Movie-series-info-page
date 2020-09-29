@@ -4,7 +4,7 @@ export const products =[
         "title": "Midi sundress with shirring detail",
         "description": "about dress 1",
         "price":29.9,
-        "availableSizes":["S","M","L","XL","XXL"]
+        "availableSizes":["XS","M","L","XL","XXL"]
         },
         {"id": "dress2",
             "image":require("../images/dress2.jpg"),
@@ -19,7 +19,7 @@ export const products =[
         "title": "Midi dress in pink ditsy floral",
         "description": "about dress 3",
         "price":14.9,
-        "availableSizes":["S","M","L","XL","XXL"]
+        "availableSizes":["XS","S","M","L","XXL"]
     },
     {
         "id": "dress4",
@@ -27,7 +27,7 @@ export const products =[
         "title": "Cami maxi dress in polka dot",
         "description": "about dress 4",
         "price":25.9,
-        "availableSizes":["S","M","L","XL","XXL"]
+        "availableSizes":["M","L","XL","XXL"]
     },
     {
         "id": "dress5",
@@ -43,6 +43,6 @@ export const products =[
         "title": "Midi tea dress in blue and red spot",
         "description": "about dress 6",
         "price":49.9,
-        "availableSizes":["S","M","L","XL","XXL"]
+        "availableSizes":["S","M","L","XXL"]
     }
  ]

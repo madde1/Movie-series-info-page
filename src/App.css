@@ -267,6 +267,26 @@ a:visited{
   font-size: 15px;
 
 }
+
+/*Filter Ecommerce*/
+.filterEcommerce{
+  display: flex;
+  padding:0 1% 0 1%;
+  border-bottom: .1rem #3E444B solid;
+  align-items: center;
+  text-align: center;
+  max-width: 87rem;
+}
+.filterEcommerce div{
+  flex:1;
+}
+.filterEcommerce-result{
+
+}
+
+
+
+
 @media (min-width: 960px) {
   #movies .col-md-3 .well {
     height: 390px;

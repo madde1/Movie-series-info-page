@@ -1,19 +1,19 @@
 import React, {Component} from 'react'
-import {products} from '../../data/dataecommerce'
 import formatCurrency from '../../utils/utils'
 
-export const Products =() =>{
-   return(
+export default class Products extends Component {
+  render(){
+    return(
         <div class="productSectionEcommerce">
             <ul class="productsEcommerce"> 
             
-            {products.map((product, key)=>{
+            {this.props.products.map((products)=>{
               return(
                   <div key={products.id}>
                       <div class="productEcommerce">
-                      <img src={product.image} alt={product.title}></img>
-                      <p class="pad-top">{product.title}</p>  
-                      <div class="product-price">{formatCurrency(product.price)}
+                      <img src={products.image} alt={products.title}></img>
+                      <p class="pad-top">{products.title}</p>  
+                      <div class="product-price">{formatCurrency(products.price)}
                       <button class="btn-product">Add to cart</button>
                       </div>
                       </div>
@@ -25,5 +25,5 @@ export const Products =() =>{
         </div>
         
     )
-
+ }
 }
