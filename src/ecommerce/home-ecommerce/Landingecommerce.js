@@ -1,9 +1,11 @@
 import React, {Component} from 'react'
+import {Provider} from 'react-redux'
 import Products from '../home-ecommerce/Products';
 import FilterEcommerce from './FilterEcommerce';
 import {products} from '../data/dataecommerce'
 import CartEcommerce from './CartEcommerce';
 import ProductMenu from './ProductMenu'
+import storeEcommerce from '../storeEcommerce'
 
 class Landingecommerce extends Component {
     constructor(){
@@ -75,6 +77,7 @@ class Landingecommerce extends Component {
     }
     render(){
         return(
+            <Provider store ={storeEcommerce}>
             <section class="ecommerceHome margin-s">
                 <header class="header-ecommerce"><div class="head-ecommerce">React Shopping Cart</div></header>
                 <main>
@@ -103,7 +106,7 @@ class Landingecommerce extends Component {
                     </div>
                 </main>
             </section>
-           
+            </Provider>
         )
     }
 }
