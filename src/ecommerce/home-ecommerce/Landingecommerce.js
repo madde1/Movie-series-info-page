@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import Products from '../home-ecommerce/Products';
 import FilterEcommerce from './FilterEcommerce';
-import {products} from '../../data/dataecommerce'
+import {products} from '../data/dataecommerce'
 import CartEcommerce from './CartEcommerce';
 import ProductMenu from './ProductMenu'
 
