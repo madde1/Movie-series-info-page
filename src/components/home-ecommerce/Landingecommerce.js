@@ -3,6 +3,7 @@ import Products from '../home-ecommerce/Products';
 import FilterEcommerce from './FilterEcommerce';
 import {products} from '../../data/dataecommerce'
 import CartEcommerce from './CartEcommerce';
+import ProductMenu from './ProductMenu'
 
 class Landingecommerce extends Component {
     constructor(){
@@ -75,10 +76,14 @@ class Landingecommerce extends Component {
     render(){
         return(
             <section class="ecommerceHome margin-s">
-                <header class="header-ecommerce"><a class="head-ecommerce">React Shopping Cart</a></header>
+                <header class="header-ecommerce"><div class="head-ecommerce">React Shopping Cart</div></header>
                 <main>
                     <div class="contentEcommerce pad-s">
+                        <div class="contentEcommerceMenus">
+                        <ProductMenu />
+                        </div>
                         <div class="mainEcommerce">
+                           
                             <FilterEcommerce 
                             count= {this.state.products.length}
                             size={this.state.size} 

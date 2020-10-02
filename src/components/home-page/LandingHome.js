@@ -94,12 +94,12 @@ class LandingHome extends Component{
                                     <div className="col-sm shadow p-4">
                                        <Link to="/movie-tvseries-search"><img className="img-fluid" src={image3} alt="Movie and tv series page"/></Link>
                                         <p className="mt-3">En hemsida för att söka ut filmer och tv serier som hämtas från API:et OMDB</p>
-                                        <a className="btn btn-outline-secondary" href="https://github.com/madde1/madde/tree/master/src/components/home-movie" target="_blank">Github repo</a>
+                                        <a className="btn btn-outline-secondary" href="https://github.com/madde1/madde/tree/master/src/components/home-movie" target="_blank" rel="noopener noreferrer">Github repo</a>
                                     </div>
                                     <div className="col-sm shadow p-4">
                                         <img className="img-fluid" src={image4} alt="Pong"/>
                                         <p className="mt-3">Ett ping pong spel gjort i Java och Java Swing för layout.</p>
-                                        <a className="btn btn-outline-secondary" href="https://github.com/madde1/PongGame" target="_blank">Github repo</a>
+                                        <a className="btn btn-outline-secondary" href="https://github.com/madde1/PongGame" target="_blank" rel="noopener noreferrer">Github repo</a>
                                     </div>
                                     </div>    
                                     </div>               

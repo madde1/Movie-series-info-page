@@ -30,11 +30,10 @@ export default class Products extends Component {
             {this.props.products.map((products)=>(
                   <div key={products.id}>
                       <div class="productEcommerce">
-                        <a href="javascript:;" onClick={() => this.openModal(products)} >   
+                        <button class="productEcommerceBtnModal" onClick={() => this.openModal(products)} >   
                             <img src={products.image} alt={products.title} ></img>
-                        
                         <p class="pad-top">{products.title}</p>  
-                        </a>
+                        </button>
                         <div class="product-price">{formatCurrency(products.price)}
                             <button onClick={()=> this.props.addToCart(products)} class="btn-product">Add to cart</button>
                       </div>
@@ -68,7 +67,7 @@ export default class Products extends Component {
                             ))}
                         </p>
                         <div class="productModalPriceEcommerce">
-                            <div class="product-price">{formatCurrency(products.price)}</div>
+                            <div id="font-size-m" class="product-price">{formatCurrency(products.price)}</div>
                             <button class="btn-product" onClick={() => {
                                 this.props.addToCart(products);
                                 this.closeModal();
