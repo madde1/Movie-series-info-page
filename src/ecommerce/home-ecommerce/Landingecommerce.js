@@ -45,7 +45,7 @@ class Landingecommerce extends Component {
         this.setState({cartItems})
         localStorage.setItem("cartItems", JSON.stringify(cartItems))
     }
-
+/*
     sortProducts = (event) =>{
        const sort = event.target.value
         console.log(event.target.value)
@@ -74,7 +74,7 @@ class Landingecommerce extends Component {
           
         })
     }
-    }
+    }*/
     render(){
         return(
             <Provider store ={storeEcommerce}>
@@ -86,15 +86,15 @@ class Landingecommerce extends Component {
                         <ProductMenu />
                         </div>
                         <div class="mainEcommerce">
-                           
-                            <FilterEcommerce 
+                            <FilterEcommerce  />
+                           {/* <FilterEcommerce 
                             count= {this.state.products.length}
                             size={this.state.size} 
                             sort={this.state.sort} 
                             filterProducts ={this.filterProducts} 
-                            sortProducts={this.sortProducts}/>
+                           sortProducts={this.sortProducts}/>*/}
                             <Products 
-                            products={this.state.products} 
+                           
                             addToCart={this.addToCart}/>
                         </div>
                         <div class="sidebarEcommerce">
