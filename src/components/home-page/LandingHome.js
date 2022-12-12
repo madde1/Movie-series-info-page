@@ -58,9 +58,9 @@ class LandingHome extends Component{
                                 </div>
                                 <div id="profile-col1" className="col-s shadow p-5 m-2">
                                     <h5>Nuvarande Anställning:</h5>
-                                    <h6 className="mb-0">Arbetslös</h6>
-                                    <p className="font-weight-light mb-0">07/2020 - nu</p>
-                                    <p>Letar arbete som fullstack<br></br> utvecklare/Java utvecklare  </p>
+                                    <h6 className="mb-0">Webbutvecklare</h6>
+                                    <p className="font-weight-light mb-0">05/2021 - nu</p>
+                                    <p>Arbetar som webbutvecklare<br></br> på Dear Friends.  </p>
                                 </div>
                                 <div className="col-s shadow p-5 m-2 ">
                                     <h5>Färdigheter</h5>
